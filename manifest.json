@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Cancellator",
+    "version": "1.0",
+    "description": "Surligne en rouge des noms de personnes spécifiques.",
+    "permissions": [
+      "activeTab"
+    ],
+    "browser_action": {
+      "default_icon": {
+        "16": "images/logo-16.png",
+        "48": "images/logo-48.png",
+        "128": "images/logo-128.png"
+      },
+      "default_title": "Cancellator",
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
